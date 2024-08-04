@@ -1,0 +1,20 @@
+builtin_interfaces/Time stamp
+
+uint16 sensor_id
+int8 temperature
+float32 lamp_current
+uint8 filter_setting
+uint8 num_of_sat
+kistler_driver_msgs/Stst stst
+kistler_driver_msgs/FilterOffOn filter_off_on
+kistler_driver_msgs/LampCurrentControl lamp_current_control
+kistler_driver_msgs/TemperatureOK temperature_ok
+kistler_driver_msgs/HeadStatus head_status
+kistler_driver_msgs/AngleSwitchedOff angle_switched_off
+uint8 direction
+kistler_driver_msgs/Satfixed satfixed
+kistler_driver_msgs/AngVelCorrection ang_vel_correction
+kistler_driver_msgs/DirectionMotion direction_motion
+kistler_driver_msgs/DirectionMounting direction_mounting
+kistler_driver_msgs/DirectionHeadIsValid direction_head_is_valid
+kistler_driver_msgs/DirectionHead direction_head

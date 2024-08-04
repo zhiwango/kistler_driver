@@ -1,0 +1,4 @@
+uint8 ANGLE_OUTPUT_ENABLED = 0
+uint8 ANGLE_OUTPUT_NOT_ENABLED = 1
+
+uint8 data

@@ -1,0 +1,31 @@
+<launch>
+  <arg name="can_device" default="can0"/>
+
+  <group>
+    <push-ros-namespace namespace="$(var can_device)"/>
+    <include file="$(find-pkg-share ros2_socketcan)/launch/socket_can_bridge.launch.xml">
+      <arg name="interface" value="$(var can_device)"/>
+      <arg name="receiver_interval_sec" value="1.0"/>
+      <arg name="sender_timeout_sec" value="0.02"/>
+    </include>
+  </group>
+
+  <node pkg="kistler_driver" name="kistler_driver" exec="kistler_driver" output="screen">
+    <remap from="input/from_can_bus" to="$(var can_device)/from_can_bus"/>
+    <remap from="output/e0_status" to="kistler/e0_status"/>
+    <remap from="output/e1_status" to="kistler/e1_status"/>
+    <remap from="output/e2_status" to="kistler/e2_status"/>
+    <remap from="output/e3_status" to="kistler/e3_status"/>
+    <remap from="output/e4_status" to="kistler/e4_status"/>
+    <remap from="output/e5_status" to="kistler/e5_status"/>
+    <remap from="output/e6_status" to="kistler/e6_status"/>
+    <remap from="output/e7_status" to="kistler/e7_status"/>
+    <remap from="output/e8_status" to="kistler/e8_status"/>
+    <remap from="output/e9_status" to="kistler/e9_status"/>
+    <remap from="output/ea_status" to="kistler/ea_status"/>
+    <remap from="output/eb_status" to="kistler/eb_status"/>
+  </node>
+
+  <executable cmd="python3 $(find-pkg-share kistler_driver)/scripts/show.py"/>
+
+</launch>

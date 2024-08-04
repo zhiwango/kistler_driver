@@ -1,0 +1,4 @@
+uint8 SENSOR_WORKED = 0
+uint8 SENSOR_NOT_WORKED = 1
+
+uint8 data

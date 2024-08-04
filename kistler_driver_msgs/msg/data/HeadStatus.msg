@@ -1,0 +1,4 @@
+uint8 SENSOR_HEAD_NOT_CONNECTED = 0
+uint8 SENSOR_HEAD_CONNECTED = 1
+
+uint8 data

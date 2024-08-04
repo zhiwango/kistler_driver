@@ -1,0 +1,4 @@
+uint8 DIRECTION_HEAD_NOT_VALID = 0
+uint8 DIRECTION_HEAD_VALID = 1
+
+uint8 data

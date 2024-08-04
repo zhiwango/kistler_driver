@@ -1,0 +1,5 @@
+builtin_interfaces/Time stamp
+
+float32 input_analog_1
+float32 input_analog_2
+int16 input_digital
