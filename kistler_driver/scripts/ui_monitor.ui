@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>494</width>
-    <height>504</height>
+    <width>491</width>
+    <height>593</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>420</y>
+      <y>510</y>
       <width>221</width>
       <height>31</height>
      </rect>
@@ -57,7 +57,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>40</y>
+      <y>130</y>
       <width>421</width>
       <height>371</height>
      </rect>
@@ -157,13 +157,53 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </widget>
+   <widget class="QComboBox" name="vehicle_model">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>231</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>- - - - Select Vehicle Model - - - -</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BYD J6 Gen1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BYD J6 Gen2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PIX RoboBus</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTextBrowser" name="show_vehicle_model">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>421</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>494</width>
+     <width>491</width>
      <height>22</height>
     </rect>
    </property>
